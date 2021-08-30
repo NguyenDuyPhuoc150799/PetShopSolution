@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30709.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopSolution.WebApp", "PetShopSolution.WebApp\PetShopSolution.WebApp.csproj", "{439D13C8-940A-47AC-A02E-6AB8B51EE8C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopSolution.WebApp", "PetShopSolution.WebApp\PetShopSolution.WebApp.csproj", "{439D13C8-940A-47AC-A02E-6AB8B51EE8C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopSolution.Data", "PetShopSolution.Data\PetShopSolution.Data.csproj", "{1CDA3532-085E-4959-98FE-DCCA509CBE81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopSolution.Data", "PetShopSolution.Data\PetShopSolution.Data.csproj", "{1CDA3532-085E-4959-98FE-DCCA509CBE81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopSolution.Application", "PetShopSolution.Application\PetShopSolution.Application.csproj", "{8019BC60-D717-446D-8D9D-7D2C593972BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopSolution.Application", "PetShopSolution.Application\PetShopSolution.Application.csproj", "{8019BC60-D717-446D-8D9D-7D2C593972BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopSolution.ViewModels", "PetShopSolution.ViewModels\PetShopSolution.ViewModels.csproj", "{6A80212A-B5D5-4D3B-B971-1C11D9471599}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8019BC60-D717-446D-8D9D-7D2C593972BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8019BC60-D717-446D-8D9D-7D2C593972BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8019BC60-D717-446D-8D9D-7D2C593972BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A80212A-B5D5-4D3B-B971-1C11D9471599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A80212A-B5D5-4D3B-B971-1C11D9471599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A80212A-B5D5-4D3B-B971-1C11D9471599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A80212A-B5D5-4D3B-B971-1C11D9471599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

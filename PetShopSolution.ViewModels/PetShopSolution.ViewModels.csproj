@@ -1,15 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    <Folder Include="Catalog\ProductImages\" />
+    <Folder Include="Common\" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\PetShopSolution.Data\PetShopSolution.Data.csproj" />
-    <ProjectReference Include="..\PetShopSolution.ViewModels\PetShopSolution.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
