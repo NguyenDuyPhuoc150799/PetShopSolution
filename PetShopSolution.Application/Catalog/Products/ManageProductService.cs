@@ -20,7 +20,7 @@ namespace PetShopSolution.Application.Catalog.Products
     {
         private readonly PetShopDbContext _context;
         private readonly IStorageService _storageService;
-        public ManageProductService(PetShopDbContext context, FileStorageService storageService)
+        public ManageProductService(PetShopDbContext context, IStorageService storageService)
         {
             _context = context;
             _storageService = storageService;
