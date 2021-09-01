@@ -1,18 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.12.2" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.2" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\PetShopSolution.Application\PetShopSolution.Application.csproj" />
     <ProjectReference Include="..\PetShopSolution.Data\PetShopSolution.Data.csproj" />
     <ProjectReference Include="..\PetShopSolution.ViewModels\PetShopSolution.ViewModels.csproj" />
   </ItemGroup>
