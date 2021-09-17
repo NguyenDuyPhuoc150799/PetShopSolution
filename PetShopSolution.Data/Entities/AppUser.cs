@@ -18,5 +18,8 @@ namespace PetShopSolution.Data.Entities
         public List<Order> Orders { get; set; }
 
         public List<Transaction> Transactions { get; set; }
+        public List<FavoriteProduct> FavoriteProducts { get; set; }
+        public List<Comment> Comments { get; set; }
+        public List<Post> Posts { get; set; }
     }
 }

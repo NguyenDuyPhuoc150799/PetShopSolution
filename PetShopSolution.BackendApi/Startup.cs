@@ -9,8 +9,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PetShopSolution.Application.Catalog.Posts;
 using PetShopSolution.Application.Catalog.Products;
 using PetShopSolution.Application.Common;
+using PetShopSolution.Application.System.Roles;
 using PetShopSolution.Application.System.Users;
 using PetShopSolution.Data.EF;
 using PetShopSolution.Data.Entities;
@@ -42,12 +44,14 @@ namespace PetShopSolution.BackendApi
             //Declare DI
             services.AddTransient<IStorageService, FileStorageService>();
 
-            services.AddTransient<IPublicProductService, PublicProductService>();
+            
             services.AddTransient<IManageProductService, ManageProductService>();
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
+            services.AddTransient<IPostService, PostService>();
 
 
             services.AddControllersWithViews();
