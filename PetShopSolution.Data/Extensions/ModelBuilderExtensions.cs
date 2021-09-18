@@ -117,6 +117,34 @@ namespace PetShopSolution.Data.Extensions
                 RoleId = roleId,
                 UserId = adminId
             });
+            modelBuilder.Entity<Post>().HasData(new Post
+            {
+                Id = 1,
+                Status = Status.InActive,
+                Content = "Content post 1",
+                Tittle = "Title post 1",
+                CreatedTime = DateTime.Now,
+                UserId = adminId,
+                ViewCount = 0,
+            }, new Post
+            {
+                Id = 2,
+                Status = Status.Active,
+                Content = "Content post 2",
+                Tittle = "Title post 2",
+                CreatedTime = DateTime.Now,
+                UserId = adminId,
+                ViewCount = 5,
+            }, new Post
+            {
+                Id = 3,
+                Status = Status.Active,
+                Content = "Content post 3",
+                Tittle = "Title post 3",
+                CreatedTime = DateTime.Now,
+                UserId = adminId,
+                ViewCount = 3,
+            });
         }
     }
 }
