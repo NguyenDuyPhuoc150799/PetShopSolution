@@ -9,6 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PetShopSolution.Application.Catalog.Comments;
+using PetShopSolution.Application.Catalog.Contacts;
+using PetShopSolution.Application.Catalog.Newss;
 using PetShopSolution.Application.Catalog.Posts;
 using PetShopSolution.Application.Catalog.Products;
 using PetShopSolution.Application.Common;
@@ -52,6 +55,9 @@ namespace PetShopSolution.BackendApi
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IPostService, PostService>();
+            services.AddTransient<IContactService, ContactService>();
+            services.AddTransient<INewsSerivce, NewsService>();
+            services.AddTransient<ICommentService, CommentService>();
 
 
             services.AddControllersWithViews();

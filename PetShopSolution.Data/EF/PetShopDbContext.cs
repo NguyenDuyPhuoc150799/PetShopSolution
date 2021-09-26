@@ -83,7 +83,7 @@ namespace PetShopSolution.Data.EF
         public DbSet<FavoriteProduct> FavoriteProducts { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Post> Posts { get; set; }
-        public DbSet<News> News { get; set; }
+        public DbSet<News> Newss { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<AppRole> AppRoles { get; set; }
     }
