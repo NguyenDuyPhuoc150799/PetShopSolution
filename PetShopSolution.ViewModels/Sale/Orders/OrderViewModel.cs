@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PetShopSolution.Data.Entities
+namespace PetShopSolution.ViewModels.Sale.Orders
 {
-    public class Order
+    public class OrderViewModel
     {
         public int Id { set; get; }
         public DateTime OrderDate { set; get; }
@@ -15,11 +15,6 @@ namespace PetShopSolution.Data.Entities
         public string ShipEmail { set; get; }
         public string ShipPhoneNumber { set; get; }
         public OrderStatus Status { set; get; }
-        public List<OrderDetail> OrderDetails { get; set; }
-
-        public AppUser AppUser { get; set; }
         public decimal Total { get; set; }
-
-
     }
 }
