@@ -15,6 +15,8 @@ using PetShopSolution.Application.Catalog.Newss;
 using PetShopSolution.Application.Catalog.Posts;
 using PetShopSolution.Application.Catalog.Products;
 using PetShopSolution.Application.Common;
+using PetShopSolution.Application.Sale.Carts;
+using PetShopSolution.Application.Sale.Orders;
 using PetShopSolution.Application.System.Roles;
 using PetShopSolution.Application.System.Users;
 using PetShopSolution.Data.EF;
@@ -58,6 +60,8 @@ namespace PetShopSolution.BackendApi
             services.AddTransient<IContactService, ContactService>();
             services.AddTransient<INewsSerivce, NewsService>();
             services.AddTransient<ICommentService, CommentService>();
+            services.AddTransient<ICartService, CartService>();
+            services.AddTransient<IOrderService, OrderService>();
 
 
             services.AddControllersWithViews();
